@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <!--group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_age"
+            android:title="Age" />
+        <item
+            android:id="@+id/nav_occupation"
+            android:title="Occupation" />
+        <item
+            android:id="@+id/nav_caretaker"
+            android:title="Caretaker"/>
+        <item
+            android:id="@+id/nav_caretaker_contact"
+            android:title="Caretaker Contact"/>
+        <item
+            android:id="@+id/nav_emergency_contact"
+            android:title="Emergency Contact"/>
+
+    </group-->
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_timeline"
+            android:icon="@drawable/picture"
+            android:title="@string/Timeline" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="@string/Settings" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout"
+            android:icon="@drawable/users"/>
+    </group>
+
+
+</menu>
+
+
