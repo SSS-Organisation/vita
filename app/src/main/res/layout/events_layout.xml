@@ -3,11 +3,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ui.Event">
+    tools:context=".ui.EventsTab">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/date"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:gravity="center_horizontal"
+        android:text=" Hey! This is what your day looks like!"/>
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="80dp"-->
+        <!--android:layout_marginLeft="15dp"-->
+        <!--android:textSize="10dp"-->
+        <!--android:textColor="@android:color/darker_gray"-->
+        <!--android:text="  Add reminders using the little + button above"/>-->
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:text=" 25/02/1999"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_blue_bright"/>
 
     <ListView
         android:id="@+id/list_todo"
+        android:layout_marginTop="120dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
 
 </RelativeLayout>

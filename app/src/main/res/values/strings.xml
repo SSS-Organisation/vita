@@ -27,7 +27,7 @@
 
     <!-- Detection activity -->
     <string name="image">Image:</string>
-    <string name="select_image">Select\nImage</string>
+    <string name="select_image">Select any image</string>
     <string name="result">Result:</string>
     <string name="detect">Detect</string>
 
@@ -133,5 +133,6 @@
     <string name="next">NEXT</string>
     <string name="age">Age</string>
     <string name="manage_people">Manage People</string>
+    <string name="hi_user"> Hi User,</string>
 
 </resources>

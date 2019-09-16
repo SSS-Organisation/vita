@@ -8,4 +8,5 @@
     <color name="colorPrimaryDark">#00BCD4</color>
     <color name="colorAccent">#D81B60</color>
     <color name="light">#E4E2E2</color>
+    <color name="date">#901A1919</color>
 </resources>

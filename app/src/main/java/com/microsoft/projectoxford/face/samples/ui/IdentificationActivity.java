@@ -162,6 +162,9 @@ public class IdentificationActivity extends AppCompatActivity {
         progressDialog.setTitle(getString(R.string.progress_dialog_title));
 
         LogHelper.clearIdentificationLog();
+
+        Button log = (Button) findViewById(R.id.view_log);
+        log.setVisibility(View.INVISIBLE);
     }
 
     @Override

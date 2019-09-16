@@ -5,8 +5,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
@@ -22,6 +24,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -39,33 +42,6 @@ import com.microsoft.projectoxford.face.samples.R;
 import com.microsoft.projectoxford.face.samples.persongroupmanagement.PersonGroupListActivity;
 
 import java.util.ArrayList;
-
-//        View v = getLayoutInflater().inflate(R.layout.nav_header_navigation,null);
-////        View v = navigationView.getHeaderView(0);
-//        TextView receive1 = (TextView) v.findViewById(R.id.myName);
-//        TextView receive2 = (TextView) v.findViewById(R.id. myAge);
-//        receive2.setText(getIntent().getStringExtra("Age"));
-//        TextView receive3 = (TextView) v.findViewById(R.id.myArea);
-//        receive3.setText(getIntent().getStringExtra("Area"));
-//        TextView receive4 = (TextView) v.findViewById(R.id.myOccupation);
-//        receive4.setText(getIntent().getStringExtra("Occupation"));
-//
-//        SharedPreferences prefs = getSharedPreferences("my_prefs_names",MODE_PRIVATE);
-//        String restoredText = prefs.getString("text",null);
-//        if (restoredText != null) {
-//            String name = prefs.getString("name", null);
-//            String age = prefs.getString("age", null);
-//            String area = prefs.getString("area", null);
-//            String occupation = prefs.getString("occupation", null);
-//        }
-//
-//        receive1.setText(prefs.getString("name", null));
-//    }
-//@Override
-//public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.main_menu, menu);
-//        return super.onCreateOptionsMenu(menu);
-//        }
 
 public class TabActivity extends AppCompatActivity {
 
@@ -198,8 +174,20 @@ public class TabActivity extends AppCompatActivity {
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
+//        ConstraintLayout layout = (ConstraintLayout) findViewById(R.id.layout1);
+//        Button button = (Button) layout.findViewById(R.id.call_button);
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                dialContactPhone("8886451027");
+//            }
+//        });
+
     }
 
+    private void dialContactPhone(final String phoneNumber) {
+        startActivity(new Intent(Intent.ACTION_DIAL, Uri.fromParts("tel", phoneNumber, null)));
+    }
 
     /*@Override
     public boolean onPrepareOptionsMenu(Menu menu){

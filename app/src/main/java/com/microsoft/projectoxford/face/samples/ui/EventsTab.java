@@ -22,7 +22,10 @@ import com.microsoft.projectoxford.face.samples.R;
 import com.microsoft.projectoxford.face.samples.db.TaskContract;
 import com.microsoft.projectoxford.face.samples.db.TaskDbHelper;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 
 public class EventsTab extends Fragment {
 
@@ -38,6 +41,14 @@ public class EventsTab extends Fragment {
         mHelper = new TaskDbHelper(getActivity());
         mTaskListView = (ListView) view4.findViewById(R.id.list_todo);
         updateUI();
+
+        Date c = Calendar.getInstance().getTime();
+        System.out.println("Today is: " + c);
+
+        SimpleDateFormat df = new SimpleDateFormat("dd-MMM-yyyy");
+        String formattedDate = df.format(c);
+        TextView textView = (TextView) view4.findViewById(R.id.date);
+        textView.setText(formattedDate);
 
         View main = inflater.inflate(R.layout.item_todo1,container,false);
         return view4;

@@ -36,14 +36,15 @@
 
                 <Button
                     android:id="@id/select_image"
+                    style="@style/ButtonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
-                    android:text="@string/select_image"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="0dp"
                     android:onClick="selectImage"
-                    style="@style/ButtonStyle" />
+                    android:text="@string/select_image" />
 
             </RelativeLayout>
 
@@ -119,13 +120,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:text="@string/faces" />
 
         <ListView
             android:id="@+id/list_identified_faces"
             android:layout_width="match_parent"
-            android:layout_height="10dp"
+            android:layout_height="20dp"
             android:layout_weight="1"
             android:background="#E0E0E0"
             android:verticalSpacing="@dimen/view_margin" />

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/hey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hi_user"
+        android:textSize="30dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/info"
+        />
+
+    <View
+        android:id="@+id/line_help"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light"
+        app:layout_constraintTop_toBottomOf="@+id/hey" />
+
+    <TextView
+        android:id="@+id/para"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/date"
+        app:layout_constraintTop_toBottomOf="@+id/line_help"
+        app:layout_constraintStart_toStartOf="@+id/line_help"
+        android:text="\n This is a list of details about the app and how it works:"/>
+
+    <TextView
+        android:id="@+id/bullet1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/para"
+        app:layout_constraintStart_toStartOf="@+id/line_help"
+        android:text="\n •   After you finish filling your details, the page that appears is the main page of the app."/>
+
+    <TextView
+        android:id="@+id/bullet5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bullet4"
+        app:layout_constraintStart_toStartOf="@+id/line_help"
+        android:text="\n •   You can see that this page has two parts called People and Events."/>
+
+    <TextView
+        android:id="@+id/bullet3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bullet2"
+        app:layout_constraintStart_toStartOf="@+id/line_help"
+        android:text="\n •   The People Tab is used to help you identify any of your loved ones, colleagues and friends based on the images you give us. If you want to add people, go to Settings."/>
+
+    <TextView
+        android:id="@+id/bullet4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bullet3"
+        app:layout_constraintStart_toStartOf="@+id/line_help"
+        android:text="\n •   The Events Tab is used to help you keep a check of your everyday schedule. If you want to edit your schedule in any way, go to Settings."/>
+
+    <TextView
+        android:id="@+id/bullet2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bullet1"
+        app:layout_constraintStart_toStartOf="@+id/line_help"
+        android:text="\n •   If you scroll from the utmost left of your phone on the main page, you can see your details that you have given."/>
+
+    <TextView
+        android:id="@+id/bullet6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/bullet5"
+        app:layout_constraintStart_toStartOf="@+id/line_help"
+        android:text="\n •   When you slide from the utmost left or if you click on the icon, under your details, there is a menu. The Timeline item will let you look at pictures of your loved ones."/>
+
+
+    <!--<ExpandableListView-->
+        <!--android:id="@+id/expandableListView"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"-->
+        <!--android:divider="#A4C739"-->
+        <!--android:dividerHeight="0.5dp"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/info"/>-->
+
+</android.support.constraint.ConstraintLayout>

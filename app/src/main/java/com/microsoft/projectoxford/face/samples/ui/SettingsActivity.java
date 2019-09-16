@@ -24,8 +24,9 @@ public class SettingsActivity extends Fragment {
 
         Button manage_events = (Button) view4.findViewById(R.id.nav_manage_events);
         Button manage_people = (Button) view4.findViewById(R.id.nav_manage_persons_groups);
+        Button help = (Button) view4.findViewById(R.id.nav_help);
         Button logout = (Button) view4.findViewById(R.id.nav_logout);
-//
+
 //        FirebaseApp.initializeApp(getActivity());
 //        firebaseAuth.getInstance();
         //FirebaseUser user = firebaseAuth.getCurrentUser();
@@ -43,6 +44,14 @@ public class SettingsActivity extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getActivity(), PersonGroupListActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Help.class);
                 startActivity(intent);
             }
         });

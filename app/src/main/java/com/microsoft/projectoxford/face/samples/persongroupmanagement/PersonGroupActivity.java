@@ -278,11 +278,17 @@ public class PersonGroupActivity extends AppCompatActivity {
 
         initializeGridView();
 
+
+
+
         progressDialog = new ProgressDialog(this);
         progressDialog.setTitle(getString(R.string.progress_dialog_title));
 
         EditText editTextPersonGroupName = (EditText)findViewById(R.id.edit_person_group_name);
         editTextPersonGroupName.setText(oldPersonGroupName);
+
+        Button log = (Button) findViewById(R.id.view_log);
+//        log.setVisibility(View.INVISIBLE);
     }
 
     private void initializeGridView() {
@@ -455,11 +461,11 @@ public class PersonGroupActivity extends AppCompatActivity {
         textView.setText(info);
     }
 
-    private class PersonGridViewAdapter extends BaseAdapter {
+    public class PersonGridViewAdapter extends BaseAdapter {
 
-        List<String> personIdList;
-        List<Boolean> personChecked;
-        boolean longPressed;
+        public List<String> personIdList;
+        public List<Boolean> personChecked;
+        public boolean longPressed;
 
         PersonGridViewAdapter() {
             longPressed = false;

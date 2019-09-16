@@ -11,7 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Make a TO-DO list you can keep track of: \n (Click on the top-right button to add)"
+        android:textSize="20dp"
+        android:text="Make a TO-DO list you can keep track of: \n (Click on the top-right button to add)\n"
         app:layout_constraintStart_toStartOf="@+id/list_todo"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,7 +32,7 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="44dp"
         android:onClick="goToNext1"
-        android:text="NEXT"
+        android:text="OKAY"
         app:layout_constraintEnd_toEndOf="@+id/list_todo"
         app:layout_constraintBottom_toBottomOf="parent" />
 
